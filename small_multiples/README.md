@@ -4,7 +4,7 @@
 
 Created by Cristian E. Nuno
 
-Date: July 16, 2019
+Date: July 17, 2019
 
 ![example](../visuals/small_multiples_example.png)
 
