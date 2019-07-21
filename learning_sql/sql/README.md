@@ -6,7 +6,9 @@ This directory contains the necessary `.sql` files related to this project.
 
 Ben Forta's book allows the user to choose the database management system they would like to use to practice SQL. I chose [PostgreSQL](https://www.postgresql.org/about/).
 
-To install PostgreSQL on your Mac OSX machine, follow this excellent [tutorial](https://medium.com/@viviennediegoencarnacion/getting-started-with-postgresql-on-mac-e6a5f48ee399).
+To install PostgreSQL on your Mac OSX machine, follow this excellent [tutorial](https://medium.com/@viviennediegoencarnacion/getting-started-with-postgresql-on-mac-e6a5f48ee399). For futher reading, I highly recommend you familiarize yourself with [`psql`](https://www.postgresql.org/docs/11/app-psql.html), the PostgreSQL interactive terminal:
+
+> psql is a terminal-based front-end to PostgreSQL. It enables you to type in queries interactively, issue them to PostgreSQL, and see the query results. Alternatively, input can be from a file or from command line arguments. In addition, psql provides a number of meta-commands and various shell-like features to facilitate writing scripts and automating a wide variety of tasks.
 
 ## `tysql` database
 
@@ -21,6 +23,12 @@ Once inside the `postgres` database - the default database - you can create `tys
 
 ```sql
 CREATE DATABASE tysql;
+```
+
+After `tysql` is created, you must connect to it using the following `psql` command:
+
+
+```bash
 \connect tysql
 ```
 
