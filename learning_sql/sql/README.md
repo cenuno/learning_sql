@@ -27,7 +27,6 @@ CREATE DATABASE tysql;
 
 After `tysql` is created, you must connect to it using the following `psql` command:
 
-
 ```bash
 \connect tysql
 ```
@@ -43,6 +42,7 @@ To create and populate the data inside the tables, you'll need to execute two `.
 
 Once complete, you'll type `\dt` to print out all the tables available to you in the `tysql` database. It should look like this:
 
+```
               List of relations
  Schema |    Name     | Type  |    Owner     
 --------+-------------+-------+--------------
@@ -52,4 +52,5 @@ Once complete, you'll type `\dt` to print out all the tables available to you in
  public | products    | table | <username>
  public | vendors     | table | <username>
 (5 rows)
+```
 
