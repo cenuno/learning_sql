@@ -388,18 +388,19 @@ corr_wo_outlier = round(correlation(xs=num_friends_clean,
                         ndigits=2)
 # visualize ----
 fig, axs = plt.subplots(nrows=1, ncols=2)
-axs[0].scatter(x=num_friends, 
-               y=daily_minutes,
-               label=corr_w_outlier)
+axs[0].scatter(x=num_friends, y=daily_minutes, alpha=0.75)
 axs[0].set_title(f"with outlier (n = {len(num_friends)})")
-axs[0].legend()
-axs[1].scatter(x=num_friends_clean,
-               y=daily_minutes_clean,
-               label=corr_wo_outlier)
+axs[0].text(32, 0, f"correlation: {corr_w_outlier}", fontsize=10)
+axs[1].scatter(x=num_friends_clean, y=daily_minutes_clean, alpha=0.75)
 axs[1].set_title(f"without outlier (n = {len(num_friends_clean)})")
-axs[1].legend()
+axs[1].text(32, 0, f"correlation: {corr_wo_outlier}", fontsize=10)
 # remove the y-axis tick marks from the second subplot
 axs[1].tick_params(labelleft=False) 
+# set xlim and ylim for each subplot
+axs[0].set_xlim(0, 105)
+axs[0].set_ylim(-2, 75)
+axs[1].set_xlim(0, 105)
+axs[1].set_ylim(-2, 75)
 # assign an overall title
 fig.suptitle("Correlation is affected by the presence of outliers", 
              fontsize=15, 
