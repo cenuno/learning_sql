@@ -2,7 +2,7 @@
 
 This directory contains the necessary `.sql` files related to this project.
 
-## Use of PostgreSQL
+## Use of PostgreSQL and `psql`
 
 Ben Forta's book allows the user to choose the database management system they would like to use to practice SQL. I chose [PostgreSQL](https://www.postgresql.org/about/).
 
@@ -53,4 +53,12 @@ Once complete, you'll type `\dt` to print out all the tables available to you in
  public | vendors     | table | <username>
 (5 rows)
 ```
+
+## Expanded Mode for Easy-to-See Terminal Output
+
+I highly recommend setting [expanded mode](https://stackoverflow.com/a/16108898/7954106) to auto to make reading the `psql` output easier to see.
+
+> When expanded mode is enabled, query results are displayed in two columns, with the column name on the left and the data on the right. This mode is useful if the data wouldn't fit on the screen in the normal “horizontal” mode. In the auto setting, the expanded mode is used whenever the query output has more than one column and is wider than the screen; otherwise, the regular mode is used.
+
+To set expanded mode as your default setting, edit the `.psqlrc` file in your home directory so that it contains `\x auto` and reset `psql`. 
 
