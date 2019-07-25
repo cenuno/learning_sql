@@ -6,6 +6,11 @@ import matplotlib
 matplotlib.use("TkAgg")
 from matplotlib import pyplot as plt
 
+# note: the examples come from Joel Grus' Data Science from Scratch book
+#       from the Gradient Descent chapter
+#
+# note: do not use this code in production. Use numpy instead.
+
 
 def difference_quotient(f: Callable[[float], float],
                         x: float,

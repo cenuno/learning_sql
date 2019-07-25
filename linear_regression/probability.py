@@ -1,6 +1,11 @@
 from typing import List
 import enum, random
 
+# note: the examples come from Joel Grus' Data Science from Scratch book
+#       from the Probability chapter
+#
+# note: do not use this code in production. Use numpy instead.
+
 # An Enum is a typed set of enumerated values. We can use them
 # to make our code more descriptive and readable
 class Kid(enum.Enum):
@@ -28,3 +33,7 @@ for _ in range(10000):
 
 print(f"P(both | older): {both_girls / older_girl}")    # ~ 0.5
 print(f"P(both | either): {both_girls / either_girl}")  # ~ 0.333
+
+# continuous distributions ----
+# A coin flip corresponds to a discrete distribution:
+# one that associates positive probability with discrete outcomes
