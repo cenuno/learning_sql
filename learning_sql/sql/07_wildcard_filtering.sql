@@ -86,5 +86,4 @@ ORDER BY cust_contact;
 
   2. Search patterns that begin with wildcards are the slowest to process;
 
-  3. Pay attention to the placement of the wildcard symbols.
-
+  3. Pay attention to the placement of the wildcard symbols. */
